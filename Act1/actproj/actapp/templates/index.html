@@ -1,0 +1,108 @@
+{% extends "base.html" %}
+
+{% block title %}
+  Home Page
+{% endblock %}
+
+{% block content %}
+  
+  <style>
+    body {
+        background-color: rgba(239, 239, 239, 0.9); 
+        background-size: cover; 
+        background-position: center;
+        text-align: center; 
+        position: relative;
+    }
+
+   
+
+    h1, h2, h3, p, img, hr, button {
+        position: relative; 
+        color: Black; 
+        z-index: 2; 
+    }
+
+    header, section {
+        margin: 20px; 
+    }
+
+    .custom-button {
+        background-color: Blue;
+        color: white;         
+        padding: 10px 20px;  
+        border: none;          
+        border-radius: 20px;    
+        cursor: pointer;    
+        font-size: 11px;
+    }
+
+    .custom-button:hover {
+        background-color: darkblue;
+    }
+  </style>
+
+  <div class="overlay"></div> 
+  <div class="overlay"></div> 
+
+  <!-- image Section -->
+  <img src="https://mystickermania.com/cdn/stickers/genshin-impact/genshin-mona-heart-512x512.png" alt="Genshin Impact" class="side-image" height="200">
+  <div class="content">
+
+    <!-- Header Section -->
+    <header>
+      <h1><><><><><><><><><></h1>
+      <h1>Sora Serizawa</h1>
+      <img src="https://i.ibb.co/5M9Lykh/sora-1.png" class="circle-image" height="300" alt="Sora">
+      <h3>AKA: Sora, yoSora, Serizawa</h3>t
+    </header>
+
+    <!-- About Me Section -->
+    <section>
+      <h2>About Me</h2>
+      <p>I am your average gamer who plays games averagely. I am also a professional napper and I take my napping seriously.</p>
+      <p>I've played a lot of games. Feel free to DM me if you're interested in playing a co-op game together or if you have any game recommendations!</p>
+      <p>Feel free to join my Discord server by clicking this link:</p>
+      <button class="custom-button" onclick="window.location.href='https://discord.gg/Kcb3cHJR7c';">Join Discord</button>
+    </section>
+
+    <!-- Hobby Section -->
+    <section>
+      <h2>Hobbies</h2>
+      <p>Playing games</p>
+      <p>Watching movies and anime</p>
+      <p>Reading books</p>
+    </section>
+
+    <!-- Education Section -->
+    <section>
+      <h2>Education</h2>
+      <h3>College</h3>
+      <p>BSGI (2022-Current)</p>
+      <p>Bachelor of Science in Genshin Impact</p>
+    </section>
+
+    <!-- Job Experience Section -->
+    <section>
+      <h2>Job Experience</h2>
+      <h3>Phasmophobia</h3>
+      <p>Ghost Huntin’ Commissioner X</p>
+
+      <h3>Lethal Company</h3>
+      <p>Employee</p>
+
+      <h3>Monster Hunter</h3>
+      <p>Monster Hunter</p>
+      <p>Monster Hunter Freedom</p>
+      <p>Monster Hunter World</p>
+      <p>Monster Hunter Rise</p>
+      <p>Monster Hunter Now</p>
+    </section>
+
+    <h1><><><><><><><><><></h1>
+
+    <!-- Side Image -->
+    <img src="https://mystickermania.com/cdn/stickers/games/genshin-ayaka-smile-512x512.png" alt="Genshin Impact" class="side-image" height="200">
+  </div>
+
+{% endblock %}
